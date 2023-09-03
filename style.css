@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("./images/jyuku-lp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: linear-gradient(#fcad45, #dd8f62); */
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    background: rgb(88, 61, 26);
+    width: 100%;
+    height: 360vh;
+    top: 0;
+    left: 0;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 20px;
+}
+
+header .logo {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 29px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(204, 112, 100);
+}
+
+header nav ul li .contact {
+    display: block;
+    background-color: rgb(230, 147, 79);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.main-title {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.sec-00 .container p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.button-area{
+    margin-top: 40px;
+}
+
+.button-area button {
+    padding: 17px 30px;
+    background-color: rgb(233, 170, 94);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button-area .free {
+    margin-right: 30px;
+}
+
+.button-area button:hover {
+    color: rgb(204, 112, 100);
+}
+
+#cursor {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    background: rgba(253, 167, 69, 0.5);
+    position: fixed;
+    top: -16px;
+    left: -16px;
+    border-radius: 50%;
+    transition: 0.15s;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.content {
+    width: 1150px;
+    display: flex; /* 横並びにする */
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {
+    position: absolute;
+    /* relative要素を親にして絶対値を充てる */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.content .text-box {
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    max-width: 550px;
+    transform: translate(-80px, -10px);
+
+    /* ガラスのようなカードblurをかける */
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content .text-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.media-icons {
+    margin-top: 100px;
+}
+
+.media-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 60px;
+}
+
+/* section02 */
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+.info-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+/* section03 */
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.media-info li a {
+    color: white;
+    text-decoration: none;
+}
+
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1),
+.media-info li:nth-child(5) {
+    padding-left: 100px;
+}
+
+.media-info li:nth-child(2),
+.media-info li:nth-child(4) {
+    padding-left: 50px;
+}
+
+.sec-03 {
+    margin-bottom: 100px;
+}
+
+/* メディアクエリ（スマホ対応にする) */
+@media screen and (max-width: 820px) {
+
+    body {
+        background-image: url("./images/jyuku-lp.jpg");
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        /* background: linear-gradient(#fcad45, #dd8f62); */
+    }
+
+    main {
+        white-space: normal;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main .main-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    main .sec-00 p {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    main .button-area{
+        margin-top: 40px;
+    }
+
+    body::after {
+        content: "";
+        position: absolute;
+        background: rgb(88, 61, 26);
+        width: 100%;
+        height: 370vh;
+        top: 0;
+        left: 0;
+        opacity: 0.45;
+        z-index: -1;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px 20px;
+    }
+    
+    header .logo {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+    
+    header nav ul {
+        list-style: none;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        margin-left: 29px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        color: rgb(204, 112, 100);
+    }
+    
+    header nav ul li .contact {
+        display: block;
+        background-color: rgb(230, 147, 79);
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+    
+    .main-title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .sec-00 .container p {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .button-area{
+        margin-top: 40px;
+    }
+    
+    .button-area button {
+        padding: 17px 30px;
+        background-color: rgb(233, 170, 94);
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 17px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .button-area .free {
+        margin-right: auto;
+    }
+    
+    .button-area button:hover {
+        color: rgb(204, 112, 100);
+    }
+    
+    #cursor {
+        pointer-events: none;
+        width: 30px;
+        height: 30px;
+        background: rgba(253, 167, 69, 0.5);
+        position: fixed;
+        top: -16px;
+        left: -16px;
+        border-radius: 50%;
+        transition: 0.15s;
+    
+    }
+    
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 15px;
+        color: #fff;
+        width: 87%;
+        margin: 0 auto;
+    }
+
+    /* .sec-00 {
+        margin: 0 auto;
+    }
+     */
+    /* .sec-01 {
+        margin: 0 auto;
+        max-width: 87%;
+    } */
+    
+    /* .sec-02 {
+        margin: 0 auto;
+    }
+    
+    .sec-03 {
+        margin: 0 auto;
+    } */
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .main-title {
+        font-size: 4rem;
+        margin-bottom: 50px;
+    }
+    
+    .content {
+        display: block;
+        width: 100%;
+    }
+    
+    .content .image {
+        position: relative;
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .content .image img {
+        position: absolute;
+        /* relative要素を親にして絶対値を充てる */
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* height: 100%;
+        object-fit: cover; */
+        border-radius: 10px;
+        z-index: 10;
+    }
+    
+    .content .text-box {
+        z-index: 20;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        max-width: 550px;
+        transform: translate(0px, 0px);
+    
+        /* ガラスのようなカードblurをかける */
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border-radius: 1px solid rgba(255, 255, 255, 0.1);
+        margin: auto;
+    }
+    
+    .content .text-box h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .media-icons {
+        margin-top: 100px;
+    }
+    
+    .media-icons a {
+        color: white;
+        font-size: 2rem;
+        margin: 16px;
+    }
+    
+    /* section02 */
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: 80px;
+    }
+    
+    .info-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .info {
+        /* width: 350px;
+        margin-left: 40px; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* section03 */
+    .sec-03 .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sec-03 .image {
+        margin-top: 40px;
+    }
+
+    .media-info {
+        width: 330px;
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    
+    .media-info li {
+        list-style: none;
+        font-size: 1.4rem;
+    }
+    
+    .media-info li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .media-info li:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    
+    .media-info li:nth-child(1),
+    .media-info li:nth-child(5) {
+        padding-left: 100px;
+    }
+    
+    .media-info li:nth-child(2),
+    .media-info li:nth-child(4) {
+        padding-left: 50px;
+    }
+    
+    .sec-03 {
+        margin-bottom: 100px;
+    }
+}
