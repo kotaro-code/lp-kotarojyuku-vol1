@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Reveal Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+<body>
+    <!-- header -->
+    <header>
+        <div>
+            <a href="#"><img src="./images/kotaroprofile.jpeg" alt="" class="logo"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">ホームページ</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">オンライン勉強相談</a></li>
+                <li><a href="#" class="contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cursor"></div>
+
+    <main>
+        <!-- section00 -->
+        <section class="sec-00">
+            <div class="container">
+                <h2 class="main-title">
+                    『偏差値70を超えた勉強法のすべて』
+                </h2>
+                <p>～LINE登録者限定の記事～</p>
+                <div class="button-area">
+                    <button class="free">無料でもらう</button>
+                    <button>お問い合わせ</button>
+                </div>  
+            </div>
+        </section>
+
+        <!-- section 01 -->
+        <section class="sec-01">
+            <div class="container">
+                <div class="content">
+                    <div class="image">
+                        <img src="./images/1.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>Youtube登録者5000人超！</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum accusantium, quas itaque dolorum ad libero quos ab nemo eos dolore?</p>
+                    </div>
+                </div>
+                <div class="media-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-line"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-wordpress"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 02 -->
+        <section class="sec-02">
+            <div class="container">
+                <h3 class="section-title">出版記録</h3>
+                <div class="content">
+                    <div class="image">
+                        <img src="./images/2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h4 class="info-title">勉強で結果を出す秘訣</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam cum ducimus quidem itaque aliquid, aperiam hic! Ab ipsum dicta nostrum veniam praesentium officia recusandae.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  section03 -->
+        <section class="sec-03">
+            <div class="container">
+                <h3 class="section-title">SNS総フォロワー6000人</h3>
+                <div class="content">
+                    <div class="media-info">
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram </a></li>
+                        <li><a href="#"><i class="fa-brands fa-line"></i> 公式LINE</a></li>
+                        <li><a href="#"><i class="fa-regular fa-note-sticky"></i> note</a></li>
+                    </div>
+                    <div class="image">
+                        <img src="./images/3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ 
+            reset: false,
+            distance: "60px",
+            duration: 2000,
+            delay: 200 
+        });
+
+        ScrollReveal().reveal('.main-title, .section-title', { delay: 200, origin: "left" });
+        ScrollReveal().reveal('.sec-00 p', { delay: 200, origin: "right" });
+        ScrollReveal().reveal('.button-area', { delay: 200, origin: "bottom" });
+        ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: "right" });
+        ScrollReveal().reveal('.media-icons i', { delay: 500, origin: "bottom", interval: 200, });
+        ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: "top",});
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin: "left", interval: 200 });
+
+
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e5e583ed0c.js" crossorigin="anonymous"></script>
+</body>
+</html>
