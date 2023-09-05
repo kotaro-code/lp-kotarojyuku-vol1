@@ -13,7 +13,8 @@ body {
     background-position: center;
     background-attachment: fixed; */
 
-    background: linear-gradient(#c9772b, #a7a7a7);
+    background: linear-gradient(#a5672c, #a7a7a7);
+    
 }
 
 /* body::after {
@@ -251,7 +252,8 @@ section {
         background-position: center;
         background-attachment: fixed; */
 
-        background: linear-gradient(#ffd296, #ffccae);
+        background: linear-gradient(#a5672c, #a7a7a7);
+        
 
         /* background-position: center center;
         background-repeat: no-repeat;
